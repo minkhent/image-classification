@@ -85,7 +85,7 @@ for fname in fnames:
     dst = os.path.join(test_dogs_dir, fname)
     shutil.copyfile(src, dst)
 
-
+#Fix overfitting problem by data augmentation
 train_datagen = ImageDataGenerator(rescale=1./255,
                                    rotation_range=40,
                                    width_shift_range=40,
